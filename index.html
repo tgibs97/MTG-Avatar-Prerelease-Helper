@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Avatar Prerelease Helper</title>
+    <meta name="description" content="Compare Avatar: The Last Airbender Prerelease boxes for Magic: The Gathering. See seeded themes, preview cards, and get a personalized recommendation." />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Avatar Prerelease Helper" />
+    <meta property="og:description" content="Compare boxes, see seeded themes, preview cards, and get a recommendation." />
+    <meta property="og:image" content="assets/social-preview.png" />
+    <meta property="og:url" content="https://example.com/avatar-prerelease" />
+    <!-- Canonical placeholder: replace with your deployed URL -->
+    <link rel="canonical" href="https://example.com/avatar-prerelease" />
+    <meta name="robots" content="index,follow" />
+  </head>
+  <body>
+    <noscript>
+      <div class="notice">This page works best with JavaScript enabled for live card previews and the quiz.</div>
+    </noscript>
+
+    <header class="site-header">
+      <div class="container">
+        <div class="branding">
+          <h1 id="site-title" tabindex="-1">Avatar Prerelease Helper</h1>
+          <p class="subhead">Compare boxes, see seeded themes, preview cards, and get a recommendation.</p>
+        </div>
+        <div class="actions">
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark">
+            <span aria-hidden="true">🌓</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="container">
+      <!-- Event Basics -->
+      <section aria-labelledby="event-basics-heading" class="section">
+        <h2 id="event-basics-heading">Event Basics</h2>
+        <p><strong>Prerelease window:</strong> Nov 14–20, 2025.</p>
+        <p>Each Prerelease Pack contains:</p>
+        <ul>
+          <li>5 Avatar Play Boosters</li>
+          <li>
+            1 Seeded Character Booster aligned to your box’s color/character
+            <p class="tiny" style="margin:.25rem 0 0 .5rem;">
+              The only official statement about these boosters is: “Each Character Booster focuses on a specific color of Magic and includes cards that highlight your chosen character.” It’s probably safe to assume you’ll receive a version of your character’s card, so those are showcased below, as they’ll likely guide your deckbuilding at prerelease.
+            </p>
+          </li>
+          <li>2 non-foil double-sided tokens themed to the pack’s color</li>
+          <li>1 traditional foil year-stamped rare or mythic rare</li>
+          <li>1 color-themed spindown die</li>
+        </ul>
+        <p class="note">Note: If you want a specific character, check with your local game store about distribution.</p>
+        <figure class="media">
+          <a href="https://media.wizards.com/2025/images/daily/en_LcIPToU73d.webp" target="_blank" rel="noopener">
+            <img src="https://media.wizards.com/2025/images/daily/en_LcIPToU73d.webp" alt="Avatar: The Last Airbender prerelease product image from Wizards of the Coast" loading="lazy" />
+          </a>
+          <figcaption class="tiny">Image © Wizards of the Coast. Click to view full size.</figcaption>
+        </figure>
+      </section>
+
+      <!-- Draft Archetypes -->
+      <section aria-labelledby="archetypes-heading" class="section">
+        <h2 id="archetypes-heading">Draft Archetypes</h2>
+        <div class="archetype-grid" role="list">
+          <article id="arch-wu-flyers" class="card" role="listitem"><h3>W/U FLYERS</h3><p>"Take to the skies with Aang and his friends! Gather a team of flyers and soar like an Airbender."</p></article>
+          <article id="arch-ub-draw-two" class="card" role="listitem"><h3>U/B DRAW TWO</h3><p>"Hunt for knowledge, using Clues and other draw effects to trigger your second-draw reward cards. The long game is yours!"</p></article>
+          <article id="arch-br-aggro" class="card" role="listitem"><h3>B/R FIRE NATION AGGRO</h3><p>"Everything changes when the Fire Nation attacks! Be aggressive with firebending and burn it on extra effects."</p></article>
+          <article id="arch-rg-ramp" class="card" role="listitem"><h3>R/G EARTH RUMBLE RAMP</h3><p>"Use mana ramp and earthbending to create 4+ power creatures, then rack up the bonuses to claim the title belt."</p></article>
+          <article id="arch-gw-allies" class="card" role="listitem"><h3>G/W ALLIES</h3><p>"A world united is unstoppable Play Allies and generate tokens to go wide and hit your enemies hard."</p></article>
+          <article id="arch-wb-sacrifice" class="card" role="listitem"><h3>W/B SACRIFICE</h3><p>"Victory comes at a cost. Play smaller creatures and Clues, then gain the upper hand when you sacrifice them."</p></article>
+          <article id="arch-ur-lessons" class="card" role="listitem"><h3>U/R COMBAT LESSONS</h3><p>"Play creatures that care about casting noncreature spells, then teach your foes a lesson with your martial prowess."</p></article>
+          <article id="arch-bg-counters" class="card" role="listitem"><h3>B/G +1/+1 COUNTERS</h3><p>"Accrue power by any means! Stack up counters to gain bonuses and control the Earth Kingdom from within."</p></article>
+          <article id="arch-rw-go-wide" class="card" role="listitem"><h3>R/W GO WIDE AGGRO</h3><p>"Lead the rebellion with an army of Allies and tokens that you can enhance for devastating attacks."</p></article>
+          <article id="arch-gu-ramp-lessons" class="card" role="listitem"><h3>G/U RAMP + LESSONS</h3><p>"Turn your knowledge into power! Ramp and draw cards to play big creatures while getting Lessons in your graveyard"</p></article>
+        </div>
+        <p class="tiny">Archetype summaries adapted from MagicUntapped (Oct 29, 2025).</p>
+        
+      </section>
+
+      <!-- Character Box Gallery (Tabs) -->
+      <section aria-labelledby="gallery-heading" class="section">
+        <h2 id="gallery-heading">Character Box Gallery</h2>
+        <div class="char-grid">
+          <section id="panel-aang" class="char-card white" data-url="https://api.scryfall.com/cards/search?q=set%3Atla+t%3Acreature+aang&unique=cards&order=set">
+            <h3>Aang — White</h3>
+            <ul class="mini-list">
+              <li>Seeded Character Booster aligned to Aang & White</li>
+              <li>White color-themed spindown die </li>
+            </ul>
+            <div class="char-mapping">
+              <p class="tiny">Avatar draft archetypes for White:</p>
+              <ul class="tags">
+                <li><button type="button" class="tag" data-arch="wu-flyers">W/U Flyers</button></li>
+                <li><button type="button" class="tag" data-arch="gw-allies">G/W Allies</button></li>
+                <li><button type="button" class="tag" data-arch="wb-sacrifice">W/B Sacrifice</button></li>
+                <li><button type="button" class="tag" data-arch="rw-go-wide">R/W Go-Wide Aggro</button></li>
+              </ul>
+            </div>
+            <div class="status" aria-live="polite"></div>
+            <div class="card-grid"></div>
+            <button class="load-more" hidden>Load more</button>
+          </section>
+          <section id="panel-katara" class="char-card blue" data-url="https://api.scryfall.com/cards/search?q=set%3Atla+t%3Acreature+katara&unique=cards&order=set">
+            <h3>Katara — Blue</h3>
+            <ul class="mini-list">
+              <li>Seeded Character Booster aligned to Katara & Blue</li>
+              <li>Blue color-themed spindown die </li>
+            </ul>
+            <div class="char-mapping">
+              <p class="tiny">Avatar draft archetypes for Blue:</p>
+              <ul class="tags">
+                <li><button type="button" class="tag" data-arch="wu-flyers">W/U Flyers</button></li>
+                <li><button type="button" class="tag" data-arch="ub-draw-two">U/B Draw Two</button></li>
+                <li><button type="button" class="tag" data-arch="ur-lessons">U/R Combat Lessons</button></li>
+                <li><button type="button" class="tag" data-arch="gu-ramp-lessons">G/U Ramp + Lessons</button></li>
+              </ul>
+            </div>
+            <div class="status" aria-live="polite"></div>
+            <div class="card-grid"></div>
+            <button class="load-more" hidden>Load more</button>
+          </section>
+          <section id="panel-azula" class="char-card black" data-url="https://api.scryfall.com/cards/search?q=set%3Atla+t%3Acreature+azula&unique=cards&order=set">
+            <h3>Azula — Black</h3>
+            <ul class="mini-list">
+              <li>Seeded Character Booster aligned to Azula & Black</li>
+              <li>Black color-themed spindown die </li>
+            </ul>
+            <div class="char-mapping">
+              <p class="tiny">Avatar draft archetypes for Black:</p>
+              <ul class="tags">
+                <li><button type="button" class="tag" data-arch="ub-draw-two">U/B Draw Two</button></li>
+                <li><button type="button" class="tag" data-arch="br-aggro">B/R Fire Nation Aggro</button></li>
+                <li><button type="button" class="tag" data-arch="bg-counters">B/G +1/+1 Counters</button></li>
+                <li><button type="button" class="tag" data-arch="wb-sacrifice">W/B Sacrifice</button></li>
+              </ul>
+            </div>
+            <div class="status" aria-live="polite"></div>
+            <div class="card-grid"></div>
+            <button class="load-more" hidden>Load more</button>
+          </section>
+          <section id="panel-zuko" class="char-card red" data-url="https://api.scryfall.com/cards/search?q=set%3Atla+t%3Acreature+zuko&unique=cards&order=set">
+            <h3>Zuko — Red</h3>
+            <ul class="mini-list">
+              <li>Seeded Character Booster aligned to Zuko & Red</li>
+              <li>Red color-themed spindown die</li>
+            </ul>
+            <div class="char-mapping">
+              <p class="tiny">Avatar draft archetypes for Red:</p>
+              <ul class="tags">
+                <li><button type="button" class="tag" data-arch="br-aggro">B/R Fire Nation Aggro</button></li>
+                <li><button type="button" class="tag" data-arch="rg-ramp">R/G Earth Rumble Ramp</button></li>
+                <li><button type="button" class="tag" data-arch="rw-go-wide">R/W Go-Wide Aggro</button></li>
+                <li><button type="button" class="tag" data-arch="ur-lessons">U/R Combat Lessons</button></li>
+              </ul>
+            </div>
+            <div class="status" aria-live="polite"></div>
+            <div class="card-grid"></div>
+            <button class="load-more" hidden>Load more</button>
+          </section>
+          <section id="panel-toph" class="char-card green" data-url="https://api.scryfall.com/cards/search?q=set%3Atla+t%3Acreature+toph&unique=cards&order=set">
+            <h3>Toph — Green</h3>
+            <ul class="mini-list">
+              <li>Seeded Character Booster aligned to Toph & Green</li>
+              <li>Green color-themed spindown die </li>
+            </ul>
+            <div class="char-mapping">
+              <p class="tiny">Avatar draft archetypes for Green:</p>
+              <ul class="tags">
+                <li><button type="button" class="tag" data-arch="rg-ramp">R/G Earth Rumble Ramp</button></li>
+                <li><button type="button" class="tag" data-arch="gw-allies">G/W Allies</button></li>
+                <li><button type="button" class="tag" data-arch="bg-counters">B/G +1/+1 Counters</button></li>
+                <li><button type="button" class="tag" data-arch="gu-ramp-lessons">G/U Ramp + Lessons</button></li>
+              </ul>
+            </div>
+            <div class="status" aria-live="polite"></div>
+            <div class="card-grid"></div>
+            <button class="load-more" hidden>Load more</button>
+          </section>
+        </div>
+      </section>
+
+      
+
+      <!-- Sources & Legal -->
+      <section aria-labelledby="sources-heading" class="section">
+        <h2 id="sources-heading">Sources &amp; Legal</h2>
+        <ul>
+          <li><a href="https://magic.wizards.com/en/news/announcements/where-to-play-avatar-the-last-airbender" target="_blank" rel="noopener">Wizards Feature: Where to Play Magic: The Gathering | Avatar: The Last Airbender (Oct 29, 2025)</a></li>
+          <li><a href="https://www.magicuntapped.com/index.php/features/3954-a-look-at-avatar-the-last-airbender-draft-archetypes" target="_blank" rel="noopener">MagicUntapped: A Look at … Draft Archetypes (Oct 29, 2025)</a></li>
+        </ul>
+        <p class="tiny">Card images and data courtesy of Scryfall.com.</p>
+        <p class="tiny">Unofficial fan site; not affiliated with Wizards of the Coast or Nickelodeon.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container tiny">Built with vanilla HTML, CSS, and JS.</div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+  </body>
+  </html>
