@@ -7,32 +7,32 @@ const panels = {
   aang: {
     id: "panel-aang",
     tab: "tab-aang",
-    url: "https://api.scryfall.com/cards/search?q=set%3Atla+t%3Acreature+aang&unique=cards&order=set",
-    human: "https://scryfall.com/search?q=set%3Atla+t%3Acreature+aang&order=set"
+    url: "https://api.scryfall.com/cards/search?q=set%3Atla%2Ctle+t%3Acreature+t%3Ahuman+aang+-(cn>%3D68+cn<%3D73)&unique=cards&order=set",
+    human: "https://scryfall.com/search?q=set%3Atla%2Ctle+t%3Acreature+t%3Ahuman+aang&order=set"
   },
   katara: {
     id: "panel-katara",
     tab: "tab-katara",
-    url: "https://api.scryfall.com/cards/search?q=set%3Atla+t%3Acreature+katara&unique=cards&order=set",
-    human: "https://scryfall.com/search?q=set%3Atla+t%3Acreature+katara&order=set"
+    url: "https://api.scryfall.com/cards/search?q=set%3Atla%2Ctle+t%3Acreature+t%3Ahuman+katara+-(cn>%3D68+cn<%3D73)&unique=cards&order=set",
+    human: "https://scryfall.com/search?q=set%3Atla%2Ctle+t%3Acreature+t%3Ahuman+katara&order=set"
   },
   azula: {
     id: "panel-azula",
     tab: "tab-azula",
-    url: "https://api.scryfall.com/cards/search?q=set%3Atla+t%3Acreature+azula&unique=cards&order=set",
-    human: "https://scryfall.com/search?q=set%3Atla+t%3Acreature+azula&order=set"
+    url: "https://api.scryfall.com/cards/search?q=set%3Atla%2Ctle+t%3Acreature+t%3Ahuman+azula+-(cn>%3D68+cn<%3D73)&unique=cards&order=set",
+    human: "https://scryfall.com/search?q=set%3Atla%2Ctle+t%3Acreature+t%3Ahuman+azula&order=set"
   },
   zuko: {
     id: "panel-zuko",
     tab: "tab-zuko",
-    url: "https://api.scryfall.com/cards/search?q=set%3Atla+t%3Acreature+zuko&unique=cards&order=set",
-    human: "https://scryfall.com/search?q=set%3Atla+t%3Acreature+zuko&order=set"
+    url: "https://api.scryfall.com/cards/search?q=set%3Atla%2Ctle+t%3Acreature+t%3Ahuman+zuko+-(cn>%3D68+cn<%3D73)&unique=cards&order=set",
+    human: "https://scryfall.com/search?q=set%3Atla%2Ctle+t%3Acreature+t%3Ahuman+zuko&order=set"
   },
   toph: {
     id: "panel-toph",
     tab: "tab-toph",
-    url: "https://api.scryfall.com/cards/search?q=set%3Atla+t%3Acreature+toph&unique=cards&order=set",
-    human: "https://scryfall.com/search?q=set%3Atla+t%3Acreature+toph&order=set"
+    url: "https://api.scryfall.com/cards/search?q=set%3Atla%2Ctle+t%3Acreature+t%3Ahuman+toph+-(cn>%3D68+cn<%3D73)&unique=cards&order=set",
+    human: "https://scryfall.com/search?q=set%3Atla%2Ctle+t%3Acreature+t%3Ahuman+toph&order=set"
   }
 };
 
